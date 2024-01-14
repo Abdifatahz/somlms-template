@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/creativetimofficial/tailwind-starter-kit/compiled-tailwind.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>Larasom</title>
+</head>
+
+<body class="text-gray-800 antialiased">
+    <nav class="top-0 absolute z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 ">
+        <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+            <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+                <a class="text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-nowrap uppercase text-white"
+                    href="index.html">
+                    <b class="text-yellow-400 text-xl">Larasom</b>
+                </a><button
+                    class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none"
+                    type="button" onclick="toggleNavbar('example-collapse-navbar')">
+                    <i class="text-white fas fa-bars"></i>
+                </button>
+            </div>
+            <div class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none hidden"
+                id="example-collapse-navbar">
+                <ul class="flex flex-col lg:flex-row list-none mr-auto">
+                    <li class="flex items-center">
+                        <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                            href="courses.html">
+                            Courses</a>
+                    </li>
+    
+                    <li class="flex items-center">
+                        <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                            href="categories.html">
+                            Categories</a>
+                    </li>
+                </ul>
+                <ul class="flex flex-col lg:flex-row list-none lg:ml-auto">
+                    <li class="flex items-center">
+                        <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                            href="#pablo">Login</a>
+                    </li>
+                    <li class="flex items-center">
+                        <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                            href="#pablo">Join</a>
+                    </li>
+    
+                    <li class="flex items-center">
+                        <a class="lg:text-white lg:hover:text-gray-300 text-gray-800 px-3 py-4 lg:py-2 flex items-center text-xs uppercase font-bold"
+                            href="profile.html">Profile</a>
+                    </li>
+    
+                </ul>
+            </div>
+        </div>
+    </nav>  
+    <main>
+
+
+        <main class="profile-page">
+            <section class="relative block" style="height: 300px;">
+                <div class="absolute top-0 w-full h-full bg-center bg-cover"
+                    style='background-image: url("https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=2710&amp;q=80");'>
+                    <span id="blackOverlay" class="w-full h-full absolute opacity-50 bg-black"></span>
+                </div>
+            </section>
+            <section class="relative py-16 bg-slate-900">
+                <div class="container mx-auto px-4">
+                    <div
+                        class="relative flex flex-col min-w-0 break-words bg-slate-900  w-full shadow-xl rounded-lg -mt-64">
+                        <div class="px-6">
+                            <div class="text-center mt-12">
+                                <h3 class="text-4xl font-semibold leading-normal mb-2 text-gray-200">
+                                    Courses <span class="text-gray-500">(3)</span>
+                                </h3>
+
+                            </div>
+                            <div class="mt-10 py-10 border-t border-gray-300 text-center">
+                                <div class="flex flex-wrap justify-center">
+                                    <div class="w-full lg:w-9/12 px-4">
+                                        <p class="mb-4 text-lg leading-relaxed text-gray-200 flex ">
+                                            <input type="text" class="p-4 bg-gray-700 rounded w-full" name="search"
+                                                id="search" placeholder="Filter by name">
+                                            <button class="mx-2 py-4 px-8 bg-gray-500 rounded">Filter</button>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="container px-5 pb-10 mx-auto flex flex-wrap">
+                                    <div class="w-full mt-10 lg:mb-0 rounded-lg overflow-hidden">
+                                        <!-- /Courses -->
+                                        <div
+                                            class="grid gap-8 sm:grid-cols-2 sm:gap-12 lg:grid-cols-3 xl:grid-cols-4 xl:gap-16">
+                                            <article class="h-40">
+                                                <a class="block h-full flex flex-col justify-around rounded-lg bg-gradient-to-r from-red-500 via-blue-400 to-blue-400 p-2 transition hover:scale-105"
+                                                    href="http://larasom.test/course/html-basics">
+                                                    <h2
+                                                        class="mx-4 mt-4 font-semibold text-xl font-semibold text-white">
+                                                        HTML basic
+                                                    </h2>
+                                                    <div class="flex flex-wrap justify-around text-gray-200">
+                                                        <div>
+                                                            <span class="fa fa-signal"></span>
+                                                            <span class="mr-1">beginer</span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="fa fa-clock"></span>
+                                                            <span class="mr-1">1 hrs</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </article>
+                                            <article class="h-40">
+                                                <a class="block h-full flex flex-col justify-around rounded-lg bg-gradient-to-r from-blue-500 via-cyan-400 to-cyan-400 p-2 transition hover:scale-105"
+                                                    href="http://larasom.test/course/css-basics">
+                                                    <h2
+                                                        class="mx-4 mt-4 font-semibold text-xl font-semibold text-white">
+                                                        CSS basics
+                                                    </h2>
+                                                    <div class="flex flex-wrap justify-around text-gray-200">
+                                                        <div>
+                                                            <span class="fa fa-signal"></span>
+                                                            <span class="mr-1">intermidiate</span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="fa fa-clock"></span>
+                                                            <span class="mr-1">2 hrs</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </article>
+                                            <article class="h-40">
+                                                <a class="block h-full flex flex-col justify-around rounded-lg bg-gradient-to-r from-purple-500 via-blue-400 to-blue-400 p-2 transition hover:scale-105"
+                                                    href="http://larasom.test/course/php-beyond-the-basics">
+                                                    <h2
+                                                        class="mx-4 mt-4 font-semibold text-xl font-semibold text-white">
+                                                        PHP beyond the basics
+                                                    </h2>
+                                                    <div class="flex flex-wrap justify-around text-gray-200">
+                                                        <div>
+                                                            <span class="fa fa-signal"></span>
+                                                            <span class="mr-1">advanced</span>
+                                                        </div>
+                                                        <div>
+                                                            <span class="fa fa-clock"></span>
+                                                            <span class="mr-1">3 hrs</span>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </article>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </main>
+</body>
+<script>
+    function toggleNavbar(collapseID) {
+        document.getElementById(collapseID).classList.toggle("hidden");
+        document.getElementById(collapseID).classList.toggle("block");
+    }
+</script>
+
+</html>
